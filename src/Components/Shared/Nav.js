@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../logo.svg";
+import logo from "../Asset/images/logo.svg";
 import { BiSearchAlt2 } from 'react-icons/bi';
 import {CgProfile} from "react-icons/cg"
 import {BsSuitHeartFill} from "react-icons/bs"
@@ -52,7 +52,7 @@ const Nav = () => {
             </li>
           </ul>
         </div>
-        <a class="btn btn-ghost normal-case text-xl  bg-slate-400 hidden lg:block"> <img className="w-32 pt-2" src={logo} alt="" /></a>
+        <a class="btn btn-ghost normal-case text-xl  bg-slate-400 hidden lg:block px-8"> <img className="w-24 pt-3" src={logo} alt="" /></a>
       </div>
       <div class="navbar hidden lg:flex">
         <ul class="menu menu-horizontal p-0 text-xs font-bold ">
@@ -93,14 +93,14 @@ const Nav = () => {
         </ul>
       </div>
       <div className="">
-      <div class="form-control flex pt-6" >
-       <input  type="text" placeholder="Search Products " class="input input-bordered  lg:w-72 w-44" />
-        <span className="relative bottom-8 lg:pl-64 pl-36 text-xl cursor-pointer"><BiSearchAlt2/></span>
+      <div class="form-control" >
+       <input  type="text" placeholder="Search Products" class="input input-bordered  lg:w-72 w-44 mt-6" />
+      <button className="relative bottom-8 lg:pl-64 pl-36 text-xl"><span ><BiSearchAlt2/></span></button>
     </div>
     <span className="text-xl lg:mx-8 hidden lg:block">{ <CgProfile/>}</span>
      <span className="text-xl lg:mr-4  hidden lg:block">{ <BsSuitHeartFill/>}</span>
      <div className="navbar">
-      <button className="btn rounded-full bg-orange-400 text-white lg:px-8 border-4 hover:border-orange-400 dua">MY CART()</button>
+      <button className="btn rounded-full bg-orange-400 text-white lg:px-8 border-4 hover:border-orange-400 ">MY CART()</button>
       </div>
       </div>
     </div>
