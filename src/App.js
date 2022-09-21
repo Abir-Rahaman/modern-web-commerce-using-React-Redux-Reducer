@@ -1,9 +1,8 @@
 
 import './App.css';
 import Nav from './Components/Shared/Nav';
-import { Route, Router } from 'react-router-dom';
 import Home from './Components/Home/Home';
-import HeroSection from './Components/HeroSection/HeroSection';
+import Products from './Components/Products/Products';
 
 
 function App() {
@@ -11,6 +10,7 @@ function App() {
     <div className="">
        <Nav></Nav>
        <Home></Home>
+       <Products></Products>
       
     </div>
   );
